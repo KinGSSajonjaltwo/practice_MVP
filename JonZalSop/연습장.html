@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-04/05.css">
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-06/table.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>1. 제목 태그들과 문단 태그</h1>
+  <h2>용도에 적합한 태그 사용하기</h2>
+  <p>
+    페이지나 섹션, 주요 요소의 제목은 h1 ~ h6 태그를 사용합니다.<br>
+    숫자가 높을수록 낮은 단계의 제목이 되죠.
+  </p>
+  <p>
+    본문은 문단별로 p 태그로 감쌉니다. p 태그끼리는 자동으로 줄바꿈이 되죠.<br>
+    문단에 관계없이 이처럼<br><br><br>
+    원하는 횟수로 줄바꿈을 하기 위해서는 br 태그를 쓰면 됩니다.<br>
+    br 태그는 열고 닫을 필요가 없는 몇 안 되는 태그 중 하나인데 남용하지 않는 것이 좋습니다.
+  </p>
+  <hr>
+  <p>
+    위와 같이 hr 태그를 사용하면 가로줄을 표시할 수도 있습니다.<br><br>
+    이&nbsp;&nbsp;&nbsp;렇&nbsp;&nbsp;&nbsp;게 글자 사이의 공백을 여럿 두려면 & n b s p ; 를 붙여서 입력하세요.
+  </p>
+  <p>
+    마지막으로, 여기서는 보이지 않지만 페이지 원본 보기에서 주석을 확인할 수 있습니다.
+  </p>
+
+
+	<h1>2. 강조하기 위한 태그들</h1>
+	<h2>b 태그 vs. strong 태그</h2>
+	<p>
+		<b>이 요소</b>와 <strong>이 요소</strong>는 같아 보이지만 다른 태그입니다. <br>
+		b 태그는 글자를 굵게만 만들지만, strong 태그는 그 내용이 중요하다는 의미 또한 담고 있죠. <br>
+		이들이 굵게 보이는 것 또한 브라우저의 기본 설정일 뿐, <br>
+		이러한 디자인 요소는 CSS로 지정해주어야 합니다.
+	</p>
+
+	<h2>i 태그 vs. em 태그</h2>
+	<p>
+		<i>이 요소</i>와 <em>이 요소</em> 역시 같아 보이지만 다른 태그입니다. <br>
+		둘 다 글자를 기울이지만, i 태그와 달리 em 태그는 강조하는 역할을 합니다. <br>
+		글자의 기울임 역시 CSS로 명시해주는것이 좋습니다. <br><br>
+	</p>
+	
+  
+
+
+  <ul>
+    <li>이틀치옷</li>
+    <li>세면도구</li>
+    <li>수건</li>
+    <li>학습 도구
+      <ul>
+        <li>노트북</li>
+        <li>연필</li>
+        <li>지우개</li>
+      </ul>
+    </li>
+  </ul>
+  <de>
+    <dt>프로그래밍</dt>
+    <dd>컴퓨터 프로그램을 작성하는 일</dd>
+    <dt>넓이</dt>
+    <dt>광</dt>
+    <dt>면적</dt>
+    <dd>일정한 평면에 걸쳐 있는 공간이나 범위의 크기</dd>
+    <dt>사과</dt>
+    <dd>사과나무의 열매</dd>
+    <dd>자기의 잘못을 인정하고 용서를 빎</dd>
+  </de>
+
+  <table>
+    <caption>1에서 9까지의 숫자들</caption>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+  <table>
+		<caption>웹개발 공부 기록</caption>
+		<thead>
+			<tr>
+				<th scope="col">과목</th>
+				<th scope="col">월</th>
+				<th scope="col">화</th>
+				<th scope="col">수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">HTML</th>
+				<td>60분</td>
+				<td>60분</td>
+				<td>0분</td>
+			</tr>
+			<tr>
+				<th scope="row">CSS</th>
+				<td>0분</td>
+				<td>30분</td>
+				<td>60분</td>
+			</tr>
+			<tr>
+				<th scope="row">JS</th>
+				<td>0분</td>
+				<td>0분</td>
+				<td>60분</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th scope="row">총 시간</th>
+				<td>60분</td>
+				<td>90분</td>
+				<td>120분</td>
+			</tr>
+		</tfoot>
+	</table>
+	
+  <table>
+		<tr>
+			<td>1</td>
+			<td colspan="2">2</td>
+      <td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td colspan="2" rowspan="2">4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+		</tr>
+	</table>
+  
+
+  <table>
+		<colgroup>
+			<col class="weekend">
+			<col span="5">
+			<col class="weekend">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">일</th>
+				<th scope="col">월</th>
+				<th scope="col">화</th>
+				<th scope="col">수</th>
+				<th scope="col">목</th>
+				<th scope="col">금</th>
+				<th scope="col">토</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+		</tbody>
+	</table>
+	<h1>a 태그를 사용한 링크들</h1>
+    <a href="https://easy-subtitle.com/">Easy Subtitle로의 하이퍼링크</a>
+
+
+    <form
+    action="./01-result.html"
+    method="get"
+  >
+
+    <label for="name">이름</label>
+    <input id="name" name="my-name" type="text">
+
+    <br><br>
+
+    <label for="age">나이</label>
+    <input id="age" name="my-age" type="number">
+
+    <br><br>
+
+    <button type="submit">제출</button>
+    <button type="reset">초기화</button>
+    <button type="button">버튼</button>
+  </form>    
+
+
+  <h1>체크 관련 인풋 타입</h1>
+
+  <form action="#">
+    <h2>checkbox</h2>
+    <input 
+      id="cbIp"
+      type="checkbox"
+      checked
+    >
+    <label for="cbIp">유기농</label> <br>
+
+    <h2>radio</h2>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_apple"
+      value="apple"
+      checked
+    >
+    <label for="f_apple">사과</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_grape"
+      value="grape"
+    >
+    <label for="f_grape">포도</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_orange"
+      value="orange"
+    >
+    <label for="f_orange">오렌지</label>
+    <br>
+
+    <input
+      type="radio"
+      name="vege"
+      id="v_carrot"
+      value="carrot"
+      checked
+    >
+    <label for="v_carrot">당근</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_tomato"
+      value="tomato"
+    >
+    <label for="v_tomato">토마토</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_eggplant"
+      value="eggplant"
+    >
+    <label for="v_eggplant">가지</label>
+
+  </form>
+
+  <h1>인풋 요소 공통(대부분) 속성</h1>
+
+  <form action="#">
+    <label for="valIp">value</label> <br>
+    <input 
+      id="valIp"
+      type="text"
+      value="지정됨"
+    >
+    <br><br>
+
+    <label for="afIp">autofocus</label> <br>
+    <input 
+      id="afIp"
+      type="text"
+      placeholder="자동 포커스됨"
+      autofocus
+    >
+    <br><br>
+
+    <label for="roIp">readonly</label> <br>
+    <input 
+      id="roIp"
+      type="text"
+      value="읽기만 가능, 전송됨"
+      readonly
+    >
+    <br><br>
+
+    <label for="rqIp">required</label> <br>
+    <input 
+      id="rqIp"
+      type="text"
+      placeholder="필수입력!"
+      required
+    >
+    <br><br>
+
+    <label for="daIp">disabled</label> <br>
+    <input 
+      id="daIp"
+      type="text"
+      placeholder="입력불가, 전송 안됨"
+      disabled
+    >
+    <br><br>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_apple"
+      value="apple"
+      checked
+    >
+    <label for="f_apple">사과</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_grape"
+      value="grape"
+    >
+    <label for="f_grape">포도</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_orange"
+      value="orange"
+      disabled
+    >
+    <label for="f_orange">오렌지(품절)</label>
+    <br>
+
+    <br><br>
+
+    <button type="submit">제출</button>
+  </form>
+
+  <h1>옵션들을 사용하는 태그</h1>
+
+  <h2>select, option 태그</h2>
+
+  <label for="lang">언어</label> <br>
+  <select id="lang">
+    <option value="">-- 언어 선택 --</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">자바스크립트</option>
+    <option value="ts">타입스크립트</option>
+  </select>
+
+  <br><br>
+
+  <h2>optgroup 태그</h2>
+
+  <label for="shopping">쇼핑 목록</label> <br>
+  <select id="shopping">
+    <optgroup label="과일">
+      <option value="f_apl">사과</option>
+      <option value="f_grp">포도</option>
+      <option value="f_org">오렌지</option>
+    </optgroup>
+    <optgroup label="채소">
+      <option value="v_crt">당근</option>
+      <option value="v_tmt">토마토</option>
+      <option value="v_ept">가지</option>
+    </optgroup>
+    <optgroup label="육류">
+      <option value="m_bef">소고기</option>
+      <option value="m_prk">돼지고기</option>
+      <option value="m_ckn">닭고기</option>
+    </optgroup>
+  </select>
+
+  <br><br>
+
+  <h2>datalist 태그</h2>
+
+  <label for="job">현재 직업</label> <br>
+  <input id="job" list="jobs">
+  <datalist id="jobs">
+    <option value="학생">
+    <option value="디자이너">
+    <option value="퍼블리셔">
+    <option value="개발자">
+  </datalist>
+
+  <h1>정도를 표현하는 태그</h1>
+
+  <h2>
+    progress 태그
+  </h2>
+  <progress 
+    id="progressBar" 
+    max="100">
+    0%
+  </progress>
+  <button id="prgStartBtn" type="button">시작</button>
+
+  <br><br>
+
+  <h2>
+    meter 태그
+  </h2>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="80">
+    80달러
+  </meter>
+
+  <br>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="80">
+    80달러
+  </meter>
+
+  <br>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="80">
+    80달러
+  </meter>
+
+  <h1>pre 태그</h1>
+
+  <pre>
+    멀리 배웅하던 길
+    여전히 나는 그곳에 서서
+    그대가 사랑한
+    이 계절의 오고 감을 봅니다
+    
+    아무 노력 말아요
+    버거울 땐 언제든
+    나의 이름을 잊어요
+    
+    꽃잎이 번지면
+    당신께도 새로운 봄이 오겠죠
+    시간이 걸려도
+    그대 반드시 행복해지세요
+  </pre>
+
+  <pre>
+              _==_
+              ( .,. )
+              (  :  )
+              (  :  )
+  </pre>
+
+  <h1>iframe 태그</h1>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=TyjEDUO0ngY" title="삐끗-" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  <h1>기타 알아둘만한 태그들</h1>
+
+  <p>
+    kbd 태그는 <kbd>Ctrl</kbd> + <kbd>C</kbd> 와 같이 키보드 입력을 나타낼 때 사용합니다.
+  </p>
+
+  <p>
+    <dfn>dfn 태그</dfn>는 특정 맥락에서 정의, 설명하고 있는 용어를 나타낼 때 사용합니다.
+  </p>
+
+  <p>
+    small 태그는 <small>이와 같이 텍스트를 작게</small> 표시하는데 사용됩니다. 
+  </p>
+  
+
+  <h1>아무것도 하지 않는 두 태그</h1>
+
+  <span>span 태그 1</span>
+  <span>span 태그 2</span>
+  <span>span 태그 3</span>
+  <span>span 태그 4</span>
+  <span>span 태그 5</span>
+
+  <br><br>
+
+  <div>div 태그 1</div>
+  <div>div 태그 2</div>
+  <div>div 태그 3</div>
+  <div>div 태그 4</div>
+  <div>div 태그 5</div>
+
+  <p>
+      span 과 div는 특별한 기능이 없는 컨텐츠 주모니
+      이 둘의 차이는 주머니의 모양과 차지하는 공간
+  </p>
+  
+</body>
+</html>
