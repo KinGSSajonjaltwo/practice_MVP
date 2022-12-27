@@ -2,12 +2,17 @@ body{
   background-color: beige;
 }
 
+#center {
+  margin: auto;
+}
+
 
 h1 {
-  color: cornflowerblue;
+  color: rgb(169, 199, 255);
   transition: color .5s ease-in-out;
 }
 
 .hidden{
   display: none;
 }
+
